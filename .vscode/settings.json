@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/kustomization.json": "file:///d%3A/Repositories/the-kubernetes-workshop/nginx.yml"
+    }
+}
