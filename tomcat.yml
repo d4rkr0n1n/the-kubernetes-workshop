@@ -19,8 +19,13 @@ spec:
       labels:
         app: tomcat-datacenter
     spec:
+      automountServiceAccountToken: false
       containers:
         - name: tomcat-container-datacenter
+          resources:
+            limits:
+              cpu: "1"
+              memory: "512Mi"
           image: gcr.io/kodekloud/centos-ssh-enabled:tomcat
           ports:
             - containerPort: 8080
